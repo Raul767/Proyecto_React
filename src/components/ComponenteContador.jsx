@@ -12,7 +12,7 @@ const ComponenteContador = () => {
     <div className="contador-container">
       <h2>Componente de Contador</h2>
       <p>Contador: {contador}</p>
-      <button onClick={incrementarContador}>Incrementar</button>
+      <button className='aumentador' onClick={incrementarContador}>Incrementar</button>
     </div>
   );
 };

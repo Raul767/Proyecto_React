@@ -5,6 +5,7 @@ const ComponenteFormulario = () => {
     const [formulario, setFormulario] = useState({
         nombre: '',
         email: '',
+        password: '',
     });
 
     const handleInputChange = (e) => {
@@ -41,7 +42,17 @@ const ComponenteFormulario = () => {
                     />
                 </label>
                 <br />
-                <button type="submit">Enviar</button>
+                <label>
+                    Password:
+                    <input
+                    type="password"
+                    name="password"
+                    value={formulario.password}
+                    onChange={handleInputChange}
+                    />
+                </label>
+                <br />
+                <button type='submit'>Enviar</button>
             </form>
         </div>
     );

@@ -11,7 +11,7 @@ const ComponenteToggle = () => {
   return (
     <div className="toggle-container">
       <h2>Componente de Alternar Visibilidad</h2>
-      <button onClick={toggleVisibility}>Toggle Visibilidad</button>
+      <button className='visibilidad' onClick={toggleVisibility}>Toggle Visibilidad</button>
       {isVisible && <p>Este contenido se muestra/oculta</p>}
     </div>
   );
